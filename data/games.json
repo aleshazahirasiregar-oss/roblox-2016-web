@@ -1,12 +1,9 @@
 {
     "games": [
         {
-            "title": "Classic Obby 2016",
-            "link": "https://www.roblox.com/games/123456"
-        },
-        {
-            "title": "Retro Tycoon",
-            "link": "https://www.roblox.com/games/654321"
+            "id": "bluetooth-test",
+            "title": "Bluetooth Testing (Dev)",
+            "link": "https://www.roblox.com/id/games/74269646670447/Bluetooth-Testing"
         }
     ]
 }

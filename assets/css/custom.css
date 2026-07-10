@@ -1,38 +1,29 @@
-/* Custom CSS untuk Roblox 2016 Revival */
-
-/* Efek tombol kaku khas UI 2016 */
-.game-card button {
-    background-color: #E0E0E0;
-    border: 2px outset #ffffff; /* Efek 3D/Outset */
-    padding: 8px 20px;
-    font-family: 'RobloxFont', Arial, sans-serif;
-    font-weight: bold;
-    cursor: pointer;
-    color: #333;
-    transition: none; /* Biar kerasa kaku, jangan pakai smooth transition */
-}
-
-/* Efek saat tombol ditekan */
-.game-card button:active {
-    border-style: inset; /* Efek ke dalam */
-    background-color: #bbb;
-}
-
-/* Pengaturan logo di header */
 .logo {
     width: 200px;
     height: 50px;
     background-image: url('../images/logo_2016.png');
     background-size: contain;
     background-repeat: no-repeat;
-    margin-bottom: 10px;
 }
 
-/* Card Game Styling */
 .game-card {
     background: #ffffff;
     border: 1px solid #666;
     padding: 10px;
     text-align: center;
     box-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+}
+
+.game-card button {
+    background-color: #E0E0E0;
+    border: 2px outset #ffffff;
+    padding: 8px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+}
+
+.game-card button:active {
+    border-style: inset;
+    background-color: #bbb;
 }

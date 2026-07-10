@@ -1,6 +1,18 @@
-body { background-color: #E0E0E0; font-family: Arial, sans-serif; margin: 0; }
-#header { background: #CCCCCC; padding: 20px; border-bottom: 2px solid #999; }
-#game-container { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; padding: 20px; }
-.game-card { background: white; border: 1px solid #666; padding: 10px; text-align: center; }
-button { border: 2px outset #ccc; background: #eee; cursor: pointer; }
+body {
+    background-color: #E0E0E0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
 
+#header {
+    background: #CCCCCC;
+    padding: 15px;
+    border-bottom: 2px solid #999;
+}
+
+#game-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}

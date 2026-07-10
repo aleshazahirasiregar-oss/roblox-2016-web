@@ -1,13 +1,23 @@
 import json
+import os
 
 def add_game(title, link):
-    with open('../data/games.json', 'r+') as f:
-        data = json.load(f)
-        data['games'].append({"title": title, "link": link})
-        f.seek(0)
+    file_path = '../data/games.json'
+    
+    # Baca file yang ada
+    if os.path.exists(file_path):
+        with open(file_path, 'r') as f:
+            data = json.load(f)
+    else:
+        data = {"games": []}
+    
+    # Tambah game baru
+    data['games'].append({"title": title, "link": link})
+    
+    # Simpan kembali
+    with open(file_path, 'w') as f:
         json.dump(data, f, indent=4)
+    print(f"Berhasil menambahkan: {title}")
 
-# Gunakan ini buat nambah game tanpa manual
-add_game("Game Baru", "https://roblox.com/games/3")
-print("Game berhasil ditambahkan!")
-
+# Contoh pemakaian
+add_game("Retro Obby 2016", "https://www.roblox.com/games/123")

@@ -1,7 +1,12 @@
 {
     "games": [
-        {"title": "Classic Obby 2016", "link": "https://roblox.com/games/1"},
-        {"title": "Tycoon Retro", "link": "https://roblox.com/games/2"}
+        {
+            "title": "Classic Obby 2016",
+            "link": "https://www.roblox.com/games/123456"
+        },
+        {
+            "title": "Retro Tycoon",
+            "link": "https://www.roblox.com/games/654321"
+        }
     ]
 }
-

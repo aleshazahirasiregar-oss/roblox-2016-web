@@ -1,4 +1,15 @@
-/* --- Roblox 2016 Retro Aesthetic --- */
+/* --- Global Styles --- */
+body {
+    background-color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+}
 
 .logo {
     width: 200px;
@@ -6,14 +17,17 @@
     background-image: url('../images/logo_2016.png');
     background-size: contain;
     background-repeat: no-repeat;
-    margin-bottom: 20px;
+    margin: 0 auto;
 }
 
+/* --- Game Container & Cards --- */
 #game-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 20px;
     padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .game-card {
@@ -22,40 +36,38 @@
     padding: 15px;
     text-align: center;
     box-shadow: 3px 3px 0px rgba(0,0,0,0.2);
-    transition: transform 0.1s;
-}
-
-.game-card:hover {
-    background: #fcfcfc;
 }
 
 .game-card h3 {
     font-size: 16px;
     color: #333333;
-    margin: 10px 0;
-    font-family: Arial, sans-serif;
+    margin-bottom: 15px;
 }
 
-/* Tombol Khas 2016 - Efek Outset */
-.game-card button {
+/* --- Buttons --- */
+button {
     background-color: #E0E0E0;
     border: 2px outset #ffffff;
     padding: 8px 25px;
     font-weight: bold;
     cursor: pointer;
     color: #333;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
 }
 
-/* Efek Tekan (Klik) - Efek Inset */
-.game-card button:active {
+button:active {
     border-style: inset;
     background-color: #cccccc;
 }
 
-/* Khusus Game "Bluetooth Testing" atau Featured */
-.game-card[data-featured="true"] {
-    border: 2px solid #0077cc;
-    background-color: #eef9ff;
+/* --- Footer & Author Button --- */
+.footer {
+    text-align: center;
+    padding: 40px;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.author-btn {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
 }
